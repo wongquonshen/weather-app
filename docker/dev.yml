@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  node:
+    image: node:21-alpine
+    container_name: weather-app
+    volumes:
+      - ../src:/app
+    working_dir: /app
+    ports:
+      - "8450:4450"
+    environment:
+      NODE_ENV: development
+      NEXT_TELEMETRY_DISABLED: 1
+      PORT: 4450
+    command: npm run dev
