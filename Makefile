@@ -18,6 +18,7 @@ abort: ## bring down the containers
 install: ## Run npm install
 	$(info Installing humanity....)
 	docker-compose -p $(PROJECT_NAME) -f docker/dev.yml run --rm node npm install
+	cp src/.env.example src/.env
 	$(info Humanity installed!)
 
 help: ## List all Make targets available.
