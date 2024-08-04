@@ -185,17 +185,13 @@ export default function Home() {
               </div>
             </div>
 
-            {
-              weather?.weather[0].icon ?? (
-                <Image
-                  className="absolute size-[300px] ml-2 top-[-10%] right-10"
-                  src={`${process.env.NEXT_PUBLIC_OPENWEATHER_IMG_URL}/img/wn/${weather?.weather[0].icon}@2x.png`}
-                  alt="Weather Now"
-                  height={40}
-                  width={40}
-                />
-              )
-            }
+            <Image
+              className="absolute size-[250px] top-[-25%] right-10"
+              src={`${process.env.NEXT_PUBLIC_OPENWEATHER_IMG_URL}/img/wn/${weather?.weather[0].icon}@2x.png`}
+              alt="Weather Now"
+              height={40}
+              width={40}
+            />
           </div>
 
           <div className="hidden lg:flex items-center justify-between mt-[10px]">
@@ -232,17 +228,13 @@ export default function Home() {
             </div>
 
             <div className="flex lg:hidden flex-col items-end justify-end text-end mt-[10px]">
-              {
-                weather?.weather[0].icon ?? (
-                  <Image
-                    className="absolute size-[157px] ml-2 top-[-10%] right-5"
-                    src={`${process.env.NEXT_PUBLIC_OPENWEATHER_IMG_URL}/img/wn/${weather?.weather[0].icon}@2x.png`}
-                    alt="Weather Now"
-                    height={40}
-                    width={40}
-                  />
-                )
-              }
+              <Image
+                className="absolute size-[157px] top-[-20%] right-5"
+                src={`${process.env.NEXT_PUBLIC_OPENWEATHER_IMG_URL}/img/wn/${weather?.weather[0].icon}@2x.png`}
+                alt="Weather Now"
+                height={40}
+                width={40}
+              />
               <div>
                 {weather?.weather[0].main}
               </div>
