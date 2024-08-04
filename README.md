@@ -30,7 +30,7 @@ If you want to access to the container
 make connect
 ```
 
-If want to exit the container
+If you want to exit the container
 ```
 exit
 ```
