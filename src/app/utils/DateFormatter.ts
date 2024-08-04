@@ -4,7 +4,7 @@ export function formatDateTime(unixTimestamp: number): string {
 
     // set to UTC for now
     const options: Intl.DateTimeFormatOptions = {
-        timeZone: 'UTC',
+        timeZone: 'Asia/Kuala_Lumpur',
         hour12: true,
         year: 'numeric',
         month: '2-digit',
